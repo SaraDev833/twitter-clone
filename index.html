@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body class="bg-black">
-    <div class="container w-350 mx-auto">
-      <div class="left w-[20%] fixed h-screen">
+    <div class="container w-350 mx-auto flex justify-between">
+      <div class="left w-[20%] scrollbar-none h-scree overflow-hiddenn">
         <div class="logo">
           <svg
             viewBox="0 0 24 24"
@@ -28,10 +28,10 @@
         <div class="icons mt-3">
           <ul class="space-y-7">
             <li class="text-white flex items-center gap-3 cursor-pointer">
-              <span class="material-symbols-outlined "> home </span>
+              <span class="material-symbols-outlined"> home </span>
               <p class="text-white">Home</p>
             </li>
-            <li class="text-white flex items-center gap-3 cursor-pointer ">
+            <li class="text-white flex items-center gap-3 cursor-pointer">
               <span class="material-symbols-outlined"> explore </span>
               <p class="text-white">Explore</p>
             </li>
@@ -75,25 +75,57 @@
             Post
           </a>
         </div>
-    <div class="flex items-center justify-between w-full gap-2">
+        <div class="flex items-center justify-between w-full gap-2">
+          <!-- Left side -->
+          <div class="flex items-center gap-2 mt-8">
+            <img
+              src="images/selena.jfif"
+              class="h-10 w-10 rounded-full object-cover"
+            />
 
-  <!-- Left side -->
-  <div class="flex items-center gap-2 mt-8">
-    <img src="images/selena.jfif" class="h-10 w-10 rounded-full object-cover" />
+            <div class="flex flex-col">
+              <p class="font-bold text-xs text-white m-0">Sheikh Sara</p>
+              <span class="text-xs text-gray-500">sara123</span>
+            </div>
+          </div>
 
-    <div class="flex flex-col">
-      <p class="font-bold text-xs text-white m-0">Sheikh Sara</p>
-      <span class="text-xs text-gray-500">sara123</span>
-    </div>
-  </div>
-
-  <!-- Right icon -->
-  <div class="text-white cursor-pointer">. . .</div>
-
-</div>
+          <!-- Right icon -->
+          <div class="text-white cursor-pointer">. . .</div>
+        </div>
       </div>
-      <div class="middle w-[50%]"></div>
-      <div class="right w-[30%]"></div>
+      <div
+        class="middle w-[50%] border-l border-r border-slate-500 h-screen overflow-y-scroll scroll-auto no-scrollbar"
+      >
+        <div
+          class="header border border-b-slate-500 flex justify-evenly items-center"
+        >
+          <div
+            class="left text-white font-bold relative hover:bg-gray-900 py-4 px-6 cursor-pointer"
+          >
+            For You
+          
+            <div
+              class="absolute left-0 -bottom-[1px] w-full h-[2px] bg-blue-500 rounded z-10"
+            ></div>
+          </div>
+
+          <div
+            class="right text-gray-500 font-bold hover:bg-gray-900 py-4 px-6"
+          >
+            Following
+          </div>
+        </div>
+      </div>
+      <div class="right w-[30%]">
+        <p class="text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+          alias voluptas iste enim laudantium cupiditate consectetur adipisci,
+          magnam commodi ipsum ad deleniti labore excepturi provident ipsam
+          neque impedit facere. Nihil ab, voluptatum enim ratione, quo
+          asperiores ducimus cumque similique, sed ea rem officia iste atque
+          sapiente aliquam excepturi temporibus consectetur?
+        </p>
+      </div>
     </div>
   </body>
 </html>
