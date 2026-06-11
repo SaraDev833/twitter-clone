@@ -2,7 +2,7 @@
 
 @layer utilities{
     .no-scrollbar{
-        -ms-overflow-styke: none;
+        -ms-overflow-style: none;
         scrollbar-width: none;
     }
       .no-scrollbar::-webkit-scrollbar {
