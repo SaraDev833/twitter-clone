@@ -11,16 +11,18 @@
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body class="bg-black">
-    <div class="container xl-w-350 mx-auto flex justify-between w-full">
+    <div
+      class="container xl-w-350 mx-auto flex justify-between w-full lg:w-5xl"
+    >
       <div
-        class="left xl-w-[20%] xl:block scrollbar-none h-scree overflow-hiddenn hidden sm-w-[5%]"
+        class="left lg:w-[20%] lg:block scrollbar-none md:h-screen overflow-hiddenn hidden sm:w-[8%] sm:block sm:flex-col sm:justify-center sm:items-center !"
       >
         <div class="logo">
           <svg
             viewBox="0 0 24 24"
             width="50"
             height="50"
-            class="invert py-3 -ml-2.5"
+            class="invert py-3 -ml-2.5 sm:m-1"
           >
             <path
               d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"
@@ -28,48 +30,50 @@
           </svg>
         </div>
         <div class="icons mt-3">
-          <ul class="space-y-7">
+          <ul
+            class="space-y-7 sm:flex sm:flex-col sm:justify-center sm:items-center lg:items-start lg:ml-2"
+          >
             <li class="text-white flex items-center gap-3 cursor-pointer">
               <span class="material-symbols-outlined"> home </span>
-              <p class="text-white">Home</p>
+              <p class="text-white hidden lg:block">Home</p>
             </li>
             <li class="text-white flex items-center gap-3 cursor-pointer">
               <span class="material-symbols-outlined"> explore </span>
-              <p class="text-white">Explore</p>
+              <p class="text-white hidden lg:block">Explore</p>
             </li>
             <li class="text-white flex items-center gap-3 cursor-pointer">
               <span class="material-symbols-outlined">
                 notification_sound
               </span>
-              <p class="text-white">Notification</p>
+              <p class="text-white hidden lg:block">Notification</p>
             </li>
             <li class="text-white flex items-center gap-3 cursor-pointer">
               <span class="material-symbols-outlined"> contacts_product </span>
-              <p class="text-white">Follow</p>
+              <p class="text-white hidden lg:block">Follow</p>
             </li>
             <li class="text-white flex items-center gap-3 cursor-pointer">
               <span class="material-symbols-outlined"> chat_bubble </span>
-              <p class="text-white">Chat</p>
+              <p class="text-white hidden lg:block">Chat</p>
             </li>
             <li class="text-white flex items-center gap-3 cursor-pointer">
               <span class="material-symbols-outlined"> explore </span>
-              <p class="text-white">Grok</p>
+              <p class="text-white hidden lg:block">Grok</p>
             </li>
             <li class="text-white flex items-center gap-3 cursor-pointer">
               <span class="material-symbols-outlined"> bookmark </span>
-              <p class="text-white">bookmark</p>
+              <p class="text-white hidden lg:block">bookmark</p>
             </li>
             <li class="text-white flex items-center gap-3 cursor-pointer">
               <span class="material-symbols-outlined"> crown </span>
-              <p class="text-white">Premium</p>
+              <p class="text-white hidden lg:block">Premium</p>
             </li>
             <li class="text-white flex items-center gap-3 cursor-pointer">
               <span class="material-symbols-outlined"> local_see </span>
-              <p class="text-white">Studio</p>
+              <p class="text-white hidden lg:block">Studio</p>
             </li>
           </ul>
         </div>
-        <div class="mt-4 w-full -ml-1">
+        <div class="mt-4 w-full -ml-1 hidden lg:block">
           <a
             href="#"
             class="block w-full bg-white text-black text-center py-2 rounded-3xl font-bold"
@@ -77,7 +81,9 @@
             Post
           </a>
         </div>
-        <div class="flex items-center justify-between w-full gap-2">
+        <div
+          class="lg:flex items-center justify-between gap-2 hidden w-full"
+        >
           <!-- Left side -->
           <div class="flex items-center gap-2 mt-8 justify-center">
             <img
@@ -90,19 +96,19 @@
               <span class="text-xs text-gray-500">sara123</span>
             </div>
           </div>
-          <div class="text-white cursor-pointer flex items-center">
+          <div class="text-white cursor-pointer flex items-center mr-1">
             <span class="material-symbols-outlined"> more_horiz </span>
           </div>
         </div>
       </div>
       <div
-        class="middle w-full xl:w-[50%] border-l border-r border-slate-700 h-screen overflow-y-scroll scroll-auto no-scrollbar"
+        class="middle w-full lg:w-[50%]! border-l border-r border-slate-700 h-screen overflow-y-scroll scroll-auto no-scrollbar sm:w-[92%]"
       >
         <div
-          class="header border border-b-slate-700 flex xl:flex-row flex-col justify-evenly xl:items-center w-full"
+          class="header border border-b-slate-700 flex lg:flex-row flex-col justify-evenly lg:items-center w-full"
         >
           <div
-            class="navbar bg-black flex justify-between p-3 items-center sticky top-0 z-50"
+            class="navbar bg-black flex justify-between p-3 items-center sticky top-0 z-50 sm:hidden"
           >
             <img
               src="images/selena.jfif"
@@ -129,7 +135,9 @@
               >
             </button>
           </div>
-          <div class="flex justify-evenly items-center w-full">
+          <div
+            class="flex justify-evenly items-center w-full sm:sticky sm:top-0 sm:z-50 sm:bg-black/30"
+          >
             <div
               class="left text-white font-bold relative hover:bg-gray-900 py-4 px-6 cursor-pointer"
             >
@@ -200,10 +208,10 @@
         </div>
         <div class="Allposts">
           <div
-            class="post-1 xl:p-6 border-b border-b-slate-700 flex justify-between items-start p-3"
+            class="post-1 lg:p-6 border-b border-b-slate-700 flex justify-between items-start p-3"
           >
-            <div class="left flex xl:gap-4 gap-2">
-              <div class="left-01 w-full">
+            <div class="left flex lg:gap-4 gap-2">
+              <div class="left-01 w-full lg:max-w-fit">
                 <img
                   src="images/duroon.jfif"
                   class="h-10! w-10! rounded-full! object-cover"
@@ -214,7 +222,7 @@
                 <span class="text-white text-lg font-bold">James Lucas </span>
                 <p class="text-white">Lake Cosmo, italy</p>
                 <div
-                  class="xl:max-w-xl w-full mx-auto bg-black rounded-2xl overflow-hidden border border-gray-700"
+                  class="lg:max-w-xl w-full mx-auto bg-black rounded-2xl overflow-hidden border border-gray-700"
                 >
                   <video
                     class="w-full h-auto object-cover"
@@ -230,53 +238,53 @@
                   class="reaction flex flex-row! justify-between items-center w-full"
                 >
                   <ul
-                    class="flex flex-row! justify-between items-center xl:gap-4 w-full cursor-pointer flex-wrap gap-1"
+                    class="flex flex-row! justify-between items-center lg:gap-4 w-full cursor-pointer flex-wrap gap-1 lg:flex-nowrap"
                   >
                     <li class="flex gap-1 justify-center items-center">
                       <span
-                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                        class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                       >
                         chat_bubble
                       </span>
-                      <p class="text-gray-500 text-xs xl:text-lg">3.3k</p>
+                      <p class="text-gray-500 text-xs lg:text-lg">3.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
                       <span
-                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                        class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                       >
                         sync
                       </span>
-                      <p class="text-gray-500 text-xs xl:text-lg">8.3k</p>
+                      <p class="text-gray-500 text-xs lg:text-lg">8.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
                       <span
-                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                        class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                       >
                         favorite
                       </span>
-                      <p class="text-gray-500 text-xs xl:text-lg">5.3k</p>
+                      <p class="text-gray-500 text-xs lg:text-lg">5.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
                       <span
-                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                        class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                       >
                         bar_chart_4_bars
                       </span>
-                      <p class="text-gray-500 text-xs xl:text-lg">3.3k</p>
+                      <p class="text-gray-500 text-xs lg:text-lg">3.3k</p>
                     </li>
 
                     <div>
-                      <ul class="flex flex-wrap">
+                      <ul class="flex flex-wrap lg:flex-nowrap">
                         <li class="flex gap-1 justify-center items-center">
                           <span
-                            class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                            class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                           >
                             bookmark
                           </span>
                         </li>
                         <li class="flex gap-1 justify-center items-center">
                           <span
-                            class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                            class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                           >
                             download
                           </span>
@@ -303,9 +311,9 @@
             </div>
           </div>
           <div
-            class="post-1 xl:p-6 p-3 border-b border-b-slate-700 flex justify-between items-start"
+            class="post-1 lg:p-6 p-3 border-b border-b-slate-700 flex justify-between items-start"
           >
-            <div class="left flex xl:gap-4 gap-2">
+            <div class="left flex lg:gap-4 gap-2">
               <div class="left-01 w-full">
                 <img
                   src="images/selena.jfif"
@@ -322,7 +330,7 @@
                   Repudiandae rem numquam quidem optio deserunt!
                 </p>
                 <div
-                  class="w-full xl:max-w-xl mx-auto bg-black rounded-2xl overflow-hidden border border-gray-700"
+                  class="w-full lg:max-w-xl mx-auto bg-black rounded-2xl overflow-hidden border border-gray-700"
                 >
                   <img src="images/tell.jfif" alt="" />
                 </div>
@@ -330,53 +338,53 @@
                   class="reaction flex flex-row! justify-between items-center w-full"
                 >
                   <ul
-                    class="flex flex-row! justify-between items-center xl:gap-4 w-full cursor-pointer gap-1 flex-wrap"
+                    class="flex flex-row! justify-between items-center lg:gap-4 w-full cursor-pointer gap-1 flex-wrap"
                   >
                     <li class="flex gap-1 justify-center items-center">
                       <span
-                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                        class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                       >
                         chat_bubble
                       </span>
-                      <p class="text-gray-500 text-xs xl:text-lg">3.3k</p>
+                      <p class="text-gray-500 text-xs lg:text-lg">3.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
                       <span
-                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                        class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                       >
                         sync
                       </span>
-                      <p class="text-gray-500 text-xs xl:text-lg">8.3k</p>
+                      <p class="text-gray-500 text-xs lg:text-lg">8.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
                       <span
-                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                        class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                       >
                         favorite
                       </span>
-                      <p class="text-gray-500 text-xs xl:text-lg">5.3k</p>
+                      <p class="text-gray-500 text-xs lg:text-lg">5.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
                       <span
-                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                        class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                       >
                         bar_chart_4_bars
                       </span>
-                      <p class="text-gray-500 text-xs xl:text-lg">3.3k</p>
+                      <p class="text-gray-500 text-xs lg:text-lg">3.3k</p>
                     </li>
 
                     <div>
                       <ul class="flex flex-wrap">
                         <li class="flex gap-1 justify-center items-center">
                           <span
-                            class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                            class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                           >
                             bookmark
                           </span>
                         </li>
                         <li class="flex gap-1 justify-center items-center">
                           <span
-                            class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                            class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                           >
                             download
                           </span>
@@ -403,9 +411,9 @@
             </div>
           </div>
           <div
-            class="post-1 xl:p-6 p-3 border-b border-b-slate-700 flex justify-between items-start"
+            class="post-1 lg:p-6 p-3 border-b border-b-slate-700 flex justify-between items-start"
           >
-            <div class="left flex xl:gap-4 gap-2">
+            <div class="left flex lg:gap-4 gap-2">
               <div class="left-01 w-full">
                 <img
                   src="images/duroon.jfif"
@@ -421,7 +429,7 @@
                   perferendis facere at.
                 </p>
                 <div
-                  class="w-full xl:max-w-xl mx-auto bg-black rounded-2xl overflow-hidden border border-gray-700"
+                  class="w-full lg:max-w-xl mx-auto bg-black rounded-2xl overflow-hidden border border-gray-700"
                 >
                   <video
                     class="w-full h-auto object-cover"
@@ -437,53 +445,53 @@
                   class="reaction flex flex-row! justify-between items-center w-full"
                 >
                   <ul
-                    class="flex flex-wrap gap-1 flex-row! justify-between items-center xl:gap-4 w-full cursor-pointer"
+                    class="flex flex-wrap gap-1 flex-row! justify-between items-center lg:gap-4 w-full cursor-pointer"
                   >
                     <li class="flex gap-1 justify-center items-center">
                       <span
-                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                        class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                       >
                         chat_bubble
                       </span>
-                      <p class="text-gray-500 text-xs xl:text-lg">3.3k</p>
+                      <p class="text-gray-500 text-xs lg:text-lg">3.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
                       <span
-                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                        class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                       >
                         sync
                       </span>
-                      <p class="text-gray-500 text-xs xl:text-lg">8.3k</p>
+                      <p class="text-gray-500 text-xs lg:text-lg">8.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
                       <span
-                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                        class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                       >
                         favorite
                       </span>
-                      <p class="text-gray-500 text-xs xl:text-lg">5.3k</p>
+                      <p class="text-gray-500 text-xs lg:text-lg">5.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
                       <span
-                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                        class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                       >
                         bar_chart_4_bars
                       </span>
-                      <p class="text-gray-500 text-xs xl:text-lg">3.3k</p>
+                      <p class="text-gray-500 text-xs lg:text-lg">3.3k</p>
                     </li>
 
                     <div>
                       <ul class="flex flex-wrap">
                         <li class="flex gap-1 justify-center items-center">
                           <span
-                            class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                            class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                           >
                             bookmark
                           </span>
                         </li>
                         <li class="flex gap-1 justify-center items-center">
                           <span
-                            class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                            class="material-symbols-outlined text-gray-500 text-xs lg:text-lg"
                           >
                             download
                           </span>
@@ -512,7 +520,7 @@
         </div>
       </div>
       <div
-        class="right hidden xl:block xl-w-[30%] mt-3 ml-6 h-screen overflow-y-scroll scroll-auto no-scrollbar"
+        class="right hidden lg:block lg:w-[30%]! mt-3 ml-6 h-screen overflow-y-scroll scroll-auto no-scrollbar"
       >
         <div
           class="box-1 flex flex-col gap-3 items-start border border-slate-700 p-5 rounded-2xl"
