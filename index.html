@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body class="bg-black">
-    <div class="container w-350 mx-auto flex justify-between">
-      <div class="left w-[20%] scrollbar-none h-scree overflow-hiddenn">
+    <div class="container xl-w-350 mx-auto flex justify-between w-full">
+      <div
+        class="left xl-w-[20%] xl:block scrollbar-none h-scree overflow-hiddenn hidden sm-w-[5%]"
+      >
         <div class="logo">
           <svg
             viewBox="0 0 24 24"
@@ -77,7 +79,7 @@
         </div>
         <div class="flex items-center justify-between w-full gap-2">
           <!-- Left side -->
-          <div class="flex items-center gap-2 mt-8">
+          <div class="flex items-center gap-2 mt-8 justify-center">
             <img
               src="images/selena.jfif"
               class="h-10 w-10 rounded-full object-cover"
@@ -88,31 +90,61 @@
               <span class="text-xs text-gray-500">sara123</span>
             </div>
           </div>
-
-          <!-- Right icon -->
-          <div class="text-white cursor-pointer">. . .</div>
+          <div class="text-white cursor-pointer flex items-center">
+            <span class="material-symbols-outlined"> more_horiz </span>
+          </div>
         </div>
       </div>
       <div
-        class="middle w-[50%] border-l border-r border-slate-700 h-screen overflow-y-scroll scroll-auto no-scrollbar"
+        class="middle w-full xl:w-[50%] border-l border-r border-slate-700 h-screen overflow-y-scroll scroll-auto no-scrollbar"
       >
         <div
-          class="header border border-b-slate-700 flex justify-evenly items-center"
+          class="header border border-b-slate-700 flex xl:flex-row flex-col justify-evenly xl:items-center w-full"
         >
           <div
-            class="left text-white font-bold relative hover:bg-gray-900 py-4 px-6 cursor-pointer"
+            class="navbar bg-black flex justify-between p-3 items-center sticky top-0 z-50"
           >
-            For You
+            <img
+              src="images/selena.jfif"
+              class="h-8 w-8 object-cover rounded-full"
+              alt=""
+            />
+            <div class="logo">
+              <svg
+                viewBox="0 0 24 24"
+                width="50"
+                height="50"
+                class="invert py-3 -ml-2.5"
+              >
+                <path
+                  d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"
+                ></path>
+              </svg>
+            </div>
+            <button>
+              <a
+                href="#"
+                class="text-xs bg-black rounded-xl py-0.5 px-1.5 text-white border-[1px] border-white"
+                >Subscribe</a
+              >
+            </button>
+          </div>
+          <div class="flex justify-evenly items-center w-full">
+            <div
+              class="left text-white font-bold relative hover:bg-gray-900 py-4 px-6 cursor-pointer"
+            >
+              For You
+
+              <div
+                class="absolute left-0 -bottom-[1px] w-full h-[2px] bg-blue-500 rounded z-10"
+              ></div>
+            </div>
 
             <div
-              class="absolute left-0 -bottom-[1px] w-full h-[2px] bg-blue-500 rounded z-10"
-            ></div>
-          </div>
-
-          <div
-            class="right text-gray-500 font-bold hover:bg-gray-900 py-4 px-6"
-          >
-            Following
+              class="right text-gray-500 font-bold hover:bg-gray-900 py-4 px-6"
+            >
+              Following
+            </div>
           </div>
         </div>
         <div
@@ -168,13 +200,13 @@
         </div>
         <div class="Allposts">
           <div
-            class="post-1 p-6 border-b border-b-slate-700 flex justify-between items-start"
+            class="post-1 xl:p-6 border-b border-b-slate-700 flex justify-between items-start p-3"
           >
-            <div class="left flex gap-4">
-              <div class="left-01">
+            <div class="left flex xl:gap-4 gap-2">
+              <div class="left-01 w-full">
                 <img
                   src="images/duroon.jfif"
-                  class="h-10 w-10 rounded-full object-cover"
+                  class="h-10! w-10! rounded-full! object-cover"
                   alt=""
                 />
               </div>
@@ -182,7 +214,7 @@
                 <span class="text-white text-lg font-bold">James Lucas </span>
                 <p class="text-white">Lake Cosmo, italy</p>
                 <div
-                  class="max-w-xl mx-auto bg-black rounded-2xl overflow-hidden border border-gray-700"
+                  class="xl:max-w-xl w-full mx-auto bg-black rounded-2xl overflow-hidden border border-gray-700"
                 >
                   <video
                     class="w-full h-auto object-cover"
@@ -198,47 +230,54 @@
                   class="reaction flex flex-row! justify-between items-center w-full"
                 >
                   <ul
-                    class="flex flex-row! justify-between items-center gap-4 w-full cursor-pointer"
+                    class="flex flex-row! justify-between items-center xl:gap-4 w-full cursor-pointer flex-wrap gap-1"
                   >
                     <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
+                      <span
+                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                      >
                         chat_bubble
                       </span>
-                      <p class="text-gray-500">3.3k</p>
+                      <p class="text-gray-500 text-xs xl:text-lg">3.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
+                      <span
+                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                      >
                         sync
                       </span>
-                      <p class="text-gray-500">8.3k</p>
+                      <p class="text-gray-500 text-xs xl:text-lg">8.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
+                      <span
+                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                      >
                         favorite
                       </span>
-                      <p class="text-gray-500">5.3k</p>
+                      <p class="text-gray-500 text-xs xl:text-lg">5.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
+                      <span
+                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                      >
                         bar_chart_4_bars
                       </span>
-                      <p class="text-gray-500">3.3k</p>
+                      <p class="text-gray-500 text-xs xl:text-lg">3.3k</p>
                     </li>
-                    <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
-                        chat_bubble
-                      </span>
-                      <p class="text-gray-500">3.3k</p>
-                    </li>
+
                     <div>
-                      <ul class="flex">
+                      <ul class="flex flex-wrap">
                         <li class="flex gap-1 justify-center items-center">
-                          <span class="material-symbols-outlined text-gray-500">
+                          <span
+                            class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                          >
                             bookmark
                           </span>
                         </li>
                         <li class="flex gap-1 justify-center items-center">
-                          <span class="material-symbols-outlined text-gray-500">
+                          <span
+                            class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                          >
                             download
                           </span>
                         </li>
@@ -264,10 +303,10 @@
             </div>
           </div>
           <div
-            class="post-1 p-6 border-b border-b-slate-700 flex justify-between items-start"
+            class="post-1 xl:p-6 p-3 border-b border-b-slate-700 flex justify-between items-start"
           >
-            <div class="left flex gap-4">
-              <div class="left-01">
+            <div class="left flex xl:gap-4 gap-2">
+              <div class="left-01 w-full">
                 <img
                   src="images/selena.jfif"
                   class="h-10 w-10 rounded-full object-cover"
@@ -283,7 +322,7 @@
                   Repudiandae rem numquam quidem optio deserunt!
                 </p>
                 <div
-                  class="max-w-xl mx-auto bg-black rounded-2xl overflow-hidden border border-gray-700"
+                  class="w-full xl:max-w-xl mx-auto bg-black rounded-2xl overflow-hidden border border-gray-700"
                 >
                   <img src="images/tell.jfif" alt="" />
                 </div>
@@ -291,47 +330,54 @@
                   class="reaction flex flex-row! justify-between items-center w-full"
                 >
                   <ul
-                    class="flex flex-row! justify-between items-center gap-4 w-full cursor-pointer"
+                    class="flex flex-row! justify-between items-center xl:gap-4 w-full cursor-pointer gap-1 flex-wrap"
                   >
                     <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
+                      <span
+                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                      >
                         chat_bubble
                       </span>
-                      <p class="text-gray-500">3.3k</p>
+                      <p class="text-gray-500 text-xs xl:text-lg">3.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
+                      <span
+                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                      >
                         sync
                       </span>
-                      <p class="text-gray-500">8.3k</p>
+                      <p class="text-gray-500 text-xs xl:text-lg">8.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
+                      <span
+                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                      >
                         favorite
                       </span>
-                      <p class="text-gray-500">5.3k</p>
+                      <p class="text-gray-500 text-xs xl:text-lg">5.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
+                      <span
+                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                      >
                         bar_chart_4_bars
                       </span>
-                      <p class="text-gray-500">3.3k</p>
+                      <p class="text-gray-500 text-xs xl:text-lg">3.3k</p>
                     </li>
-                    <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
-                        chat_bubble
-                      </span>
-                      <p class="text-gray-500">3.3k</p>
-                    </li>
+
                     <div>
-                      <ul class="flex">
+                      <ul class="flex flex-wrap">
                         <li class="flex gap-1 justify-center items-center">
-                          <span class="material-symbols-outlined text-gray-500">
+                          <span
+                            class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                          >
                             bookmark
                           </span>
                         </li>
                         <li class="flex gap-1 justify-center items-center">
-                          <span class="material-symbols-outlined text-gray-500">
+                          <span
+                            class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                          >
                             download
                           </span>
                         </li>
@@ -357,10 +403,10 @@
             </div>
           </div>
           <div
-            class="post-1 p-6 border-b border-b-slate-700 flex justify-between items-start"
+            class="post-1 xl:p-6 p-3 border-b border-b-slate-700 flex justify-between items-start"
           >
-            <div class="left flex gap-4">
-              <div class="left-01">
+            <div class="left flex xl:gap-4 gap-2">
+              <div class="left-01 w-full">
                 <img
                   src="images/duroon.jfif"
                   class="h-10 w-10 rounded-full object-cover"
@@ -375,7 +421,7 @@
                   perferendis facere at.
                 </p>
                 <div
-                  class="max-w-xl mx-auto bg-black rounded-2xl overflow-hidden border border-gray-700"
+                  class="w-full xl:max-w-xl mx-auto bg-black rounded-2xl overflow-hidden border border-gray-700"
                 >
                   <video
                     class="w-full h-auto object-cover"
@@ -391,47 +437,54 @@
                   class="reaction flex flex-row! justify-between items-center w-full"
                 >
                   <ul
-                    class="flex flex-row! justify-between items-center gap-4 w-full cursor-pointer"
+                    class="flex flex-wrap gap-1 flex-row! justify-between items-center xl:gap-4 w-full cursor-pointer"
                   >
                     <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
+                      <span
+                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                      >
                         chat_bubble
                       </span>
-                      <p class="text-gray-500">3.3k</p>
+                      <p class="text-gray-500 text-xs xl:text-lg">3.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
+                      <span
+                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                      >
                         sync
                       </span>
-                      <p class="text-gray-500">8.3k</p>
+                      <p class="text-gray-500 text-xs xl:text-lg">8.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
+                      <span
+                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                      >
                         favorite
                       </span>
-                      <p class="text-gray-500">5.3k</p>
+                      <p class="text-gray-500 text-xs xl:text-lg">5.3k</p>
                     </li>
                     <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
+                      <span
+                        class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                      >
                         bar_chart_4_bars
                       </span>
-                      <p class="text-gray-500">3.3k</p>
+                      <p class="text-gray-500 text-xs xl:text-lg">3.3k</p>
                     </li>
-                    <li class="flex gap-1 justify-center items-center">
-                      <span class="material-symbols-outlined text-gray-500">
-                        chat_bubble
-                      </span>
-                      <p class="text-gray-500">3.3k</p>
-                    </li>
+
                     <div>
-                      <ul class="flex">
+                      <ul class="flex flex-wrap">
                         <li class="flex gap-1 justify-center items-center">
-                          <span class="material-symbols-outlined text-gray-500">
+                          <span
+                            class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                          >
                             bookmark
                           </span>
                         </li>
                         <li class="flex gap-1 justify-center items-center">
-                          <span class="material-symbols-outlined text-gray-500">
+                          <span
+                            class="material-symbols-outlined text-gray-500 text-xs xl:text-lg"
+                          >
                             download
                           </span>
                         </li>
@@ -459,7 +512,7 @@
         </div>
       </div>
       <div
-        class="right w-[30%] mt-3 ml-6 h-screen overflow-y-scroll scroll-auto no-scrollbar"
+        class="right hidden xl:block xl-w-[30%] mt-3 ml-6 h-screen overflow-y-scroll scroll-auto no-scrollbar"
       >
         <div
           class="box-1 flex flex-col gap-3 items-start border border-slate-700 p-5 rounded-2xl"
@@ -744,11 +797,17 @@
             </div>
           </div>
         </div>
-        <div class="footer flex gap-2 items-center border border-t-slate-700 mb-4">
-        <div class="mt-4">  <span class="text-xs text-slate-500 ">Terms of services |</span>
-          <span class="text-xs text-slate-500 ">cookies |</span>
-          <span class="text-xs text-slate-500 ">Policies |</span>
-          <span class="text-xs text-slate-500 ">Accessibility | 2026 x corp</span></div>
+        <div
+          class="footer flex gap-2 items-center border border-t-slate-700 mb-4"
+        >
+          <div class="mt-4">
+            <span class="text-xs text-slate-500">Terms of services |</span>
+            <span class="text-xs text-slate-500">cookies |</span>
+            <span class="text-xs text-slate-500">Policies |</span>
+            <span class="text-xs text-slate-500"
+              >Accessibility | 2026 x corp</span
+            >
+          </div>
         </div>
       </div>
     </div>
